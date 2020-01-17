@@ -1,0 +1,1191 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.test"
+4    android:versionCode="1"
+5    android:versionName="1.0.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml
+10
+11    <permission
+11-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:7:3-9:42
+12        android:name="com.test.permission.C2D_MESSAGE"
+12-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:8:5-51
+13        android:protectionLevel="signature" />
+13-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:9:5-40
+14
+15    <!-- These are required permissions to make the app run -->
+16    <uses-permission android:name="com.test.permission.C2D_MESSAGE" />
+16-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:12:3-69
+16-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:12:20-66
+17    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+17-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:13:3-80
+17-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:13:20-77
+18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+18-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:14:3-77
+18-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:14:20-74
+19    <uses-permission android:name="android.permission.INTERNET" />
+19-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:15:3-65
+19-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:15:20-62
+20    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+20-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:16:3-76
+20-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:16:20-73
+21    <uses-permission android:name="android.permission.WAKE_LOCK" />
+21-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:17:3-66
+21-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:17:20-63
+22
+23    <!-- ADD PERMISSIONS HERE -->
+24    <!-- BEGIN OPTIONAL PERMISSIONS -->
+25    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+25-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:21:3-73
+25-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:21:20-70
+26    <uses-permission android:name="android.permission.READ_INTERNAL_STORAGE" />
+26-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:22:3-78
+26-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:22:20-75
+27    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+27-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:23:3-73
+27-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:23:20-70
+28    <uses-permission android:name="android.permission.USE_FINGERPRINT" />
+28-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:24:3-72
+28-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:24:20-69
+29    <uses-permission android:name="android.permission.VIBRATE" />
+29-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:25:3-64
+29-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:25:20-61
+30    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+30-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:26:3-86
+30-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:26:20-83
+31    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+31-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:27:3-78
+31-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:27:20-75
+32
+33    <!-- These require runtime permissions on M -->
+34    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+34-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:30:3-79
+34-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:30:20-76
+35    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+35-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:31:3-77
+35-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:31:20-74
+36    <uses-permission android:name="android.permission.CAMERA" />
+36-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:32:3-63
+36-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:32:20-60
+37    <uses-permission android:name="android.permission.READ_CONTACTS" />
+37-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:33:3-70
+37-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:33:20-67
+38    <uses-permission android:name="android.permission.READ_CALENDAR" />
+38-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:34:3-70
+38-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:34:20-67
+39    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+39-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:35:3-71
+39-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:35:20-68
+40    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+40-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:36:3-78
+40-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:36:20-75
+41    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+41-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:37:3-69
+41-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:37:20-66
+42    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+42-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:38:3-79
+42-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:38:20-76
+43    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+43-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:39:3-71
+43-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:39:20-68
+44    <!-- END OPTIONAL PERMISSIONS -->
+45
+46
+47    <!-- ADD TEST PERMISSIONS HERE -->
+48
+49    <uses-feature
+49-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:44:3-77
+50        android:glEsVersion="0x00020000"
+50-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:44:17-49
+51        android:required="true" />
+51-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:44:50-74
+52    <uses-feature
+52-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:45:3-85
+53        android:name="android.software.leanback"
+53-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:45:17-57
+54        android:required="false" />
+54-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:45:58-82
+55    <uses-feature
+55-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:46:3-88
+56        android:name="android.hardware.touchscreen"
+56-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:46:17-60
+57        android:required="false" />
+57-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:46:61-85
+58
+59    <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+60    <supports-screens
+60-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:13:5-19:24
+61        android:anyDensity="true"
+61-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:14:9-34
+62        android:largeScreens="true"
+62-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:15:9-36
+63        android:normalScreens="true"
+63-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:16:9-37
+64        android:smallScreens="true"
+64-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:17:9-36
+65        android:xlargeScreens="true" >
+65-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:18:9-37
+66    </supports-screens>
+67
+68    <uses-permission android:name="host.exp.exponent.permission.C2D_MESSAGE" /> <!-- Used by react-native-netinfo module -->
+68-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:26:5-80
+68-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:26:22-77
+69    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+69-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:34:5-76
+69-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:34:22-73
+70
+71    <uses-feature
+71-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:47:5-49:36
+72        android:name="android.hardware.camera"
+72-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:48:9-47
+73        android:required="false" />
+73-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:49:9-33
+74    <uses-feature
+74-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:50:5-52:36
+75        android:name="android.hardware.camera.autofocus"
+75-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:51:9-57
+76        android:required="false" />
+76-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:52:9-33
+77    <uses-feature
+77-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:53:5-55:36
+78        android:name="android.hardware.location"
+78-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:54:9-49
+79        android:required="false" />
+79-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:55:9-33
+80    <uses-feature
+80-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:56:5-58:36
+81        android:name="android.hardware.location.gps"
+81-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:57:9-53
+82        android:required="false" />
+82-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:58:9-33
+83    <uses-feature
+83-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:59:5-61:36
+84        android:name="android.hardware.location.network"
+84-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:60:9-57
+85        android:required="false" />
+85-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:61:9-33
+86    <uses-feature
+86-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:62:5-64:36
+87        android:name="android.hardware.wifi"
+87-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:63:9-45
+88        android:required="false" />
+88-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:64:9-33
+89    <uses-feature
+89-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:65:5-67:36
+90        android:name="android.hardware.microphone"
+90-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:66:9-51
+91        android:required="false" />
+91-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:67:9-33
+92    <uses-feature
+92-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:68:5-70:36
+93        android:name="android.hardware.telephony"
+93-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:69:9-50
+94        android:required="false" />
+94-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:70:9-33
+95    <uses-feature
+95-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:71:5-73:36
+96        android:name="android.hardware.bluetooth"
+96-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:72:9-50
+97        android:required="false" />
+97-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:73:9-33
+98
+99    <uses-permission android:name="android.permission.STORAGE" />
+99-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:5-66
+99-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:15:22-63
+100    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- for android -->
+100-->[:expo-location] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:5-77
+100-->[:expo-location] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:13:22-74
+101    <!-- <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS"/> -->
+102    <!-- <uses-permission android:name="com.android.launcher.permission.WRITE_SETTINGS"/> -->
+103    <!-- <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" /> -->
+104    <!-- <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" /> -->
+105    <!-- for Samsung -->
+106    <uses-permission android:name="com.sec.android.provider.badge.permission.READ" />
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:19:5-86
+106-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:19:22-83
+107    <uses-permission android:name="com.sec.android.provider.badge.permission.WRITE" /> <!-- for htc -->
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:20:5-87
+107-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:20:22-84
+108    <uses-permission android:name="com.htc.launcher.permission.READ_SETTINGS" />
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:23:5-81
+108-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:23:22-78
+109    <uses-permission android:name="com.htc.launcher.permission.UPDATE_SHORTCUT" /> <!-- for sony -->
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:24:5-83
+109-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:24:22-80
+110    <uses-permission android:name="com.sonyericsson.home.permission.BROADCAST_BADGE" /> <!-- for apex -->
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:27:5-88
+110-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:27:22-85
+111    <uses-permission android:name="com.anddoes.launcher.permission.UPDATE_COUNT" /> <!-- for solid -->
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:30:5-84
+111-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:30:22-81
+112    <uses-permission android:name="com.majeur.launcher.permission.UPDATE_BADGE" />
+112-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:33:5-83
+112-->[me.leolin:ShortcutBadger:1.1.4] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/dd44d6dca430fddc25756188e590b806/ShortcutBadger-1.1.4/AndroidManifest.xml:33:22-80
+113    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:15:5-98
+113-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:15:22-95
+114    <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" />
+114-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:16:5-94
+114-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:16:22-91
+115    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:5-110
+115-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:26:22-107
+116
+117    <application
+117-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:48:3-350:17
+118        android:name="host.exp.exponent.MainApplication"
+118-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:49:5-36
+119        android:allowBackup="true"
+119-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:50:5-31
+120        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+120-->[androidx.core:core:1.1.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/37791d22cdf73b5c35c92eb9addd3f27/core-1.1.0/AndroidManifest.xml:24:18-86
+121        android:debuggable="true"
+122        android:icon="@mipmap/ic_launcher"
+122-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:51:5-39
+123        android:label="@string/app_name"
+123-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:52:5-37
+124        android:largeHeap="true"
+124-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:53:5-29
+125        android:supportsRtl="true"
+125-->[com.facebook.android:facebook-android-sdk:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/36d8e97a0dea5ca0c54825784f11758c/facebook-android-sdk-5.0.1/AndroidManifest.xml:28:18-44
+126        android:usesCleartextTraffic="true" >
+126-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:54:5-40
+127        <activity
+127-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:56:5-61:16
+128            android:name="host.exp.exponent.LauncherActivity"
+128-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:57:7-39
+129            android:exported="true"
+129-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:58:7-30
+130            android:launchMode="singleTask"
+130-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:59:7-38
+131            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+131-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:60:7-66
+132        </activity>
+133        <activity
+133-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:63:5-68:16
+134            android:name="host.exp.exponent.experience.ExperienceActivity"
+134-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:64:7-52
+135            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+135-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:65:7-77
+136            android:theme="@style/Theme.Exponent.Light"
+136-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:66:7-50
+137            android:windowSoftInputMode="adjustResize" >
+137-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:67:7-49
+138        </activity>
+139        <activity
+139-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:70:5-90:16
+140            android:name="host.exp.exponent.MainActivity"
+140-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:71:7-35
+141            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+141-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:73:7-77
+142            android:launchMode="singleTask"
+142-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:72:7-38
+143            android:theme="@style/Theme.Exponent.Splash"
+143-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:74:7-51
+144            android:windowSoftInputMode="adjustResize" >
+144-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:75:7-49
+145            <intent-filter>
+145-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:76:7-83:23
+146                <data android:scheme="expd19ab717a42c486f8c1aaf87bd9e1271" />
+146-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+146-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+147
+148                <action android:name="android.intent.action.VIEW" />
+148-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+148-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+149
+150                <category android:name="android.intent.category.DEFAULT" />
+150-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+150-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+151                <category android:name="android.intent.category.BROWSABLE" />
+151-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+151-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+152            </intent-filter>
+153            <intent-filter>
+153-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:84:7-88:23
+154                <action android:name="android.intent.action.MAIN" />
+154-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:85:9-60
+154-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:85:17-58
+155
+156                <category android:name="android.intent.category.LAUNCHER" />
+156-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:87:9-68
+156-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:87:19-66
+157            </intent-filter>
+158            <!-- ADD DETACH APP SPECIFIC INTENT FILTERS -->
+159        </activity>
+160        <activity
+160-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:92:5-98:16
+161            android:name="host.exp.exponent.experience.HomeActivity"
+161-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:93:7-46
+162            android:label="@string/app_name"
+162-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:94:7-39
+163            android:launchMode="singleTask"
+163-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:95:7-38
+164            android:screenOrientation="portrait"
+164-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:96:7-43
+165            android:theme="@style/Theme.Exponent.Light" >
+165-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:97:7-50
+166        </activity>
+167        <activity
+167-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:100:5-109:15
+168            android:name="host.exp.exponent.experience.TvActivity"
+168-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:101:7-44
+169            android:label="@string/app_name"
+169-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:102:7-39
+170            android:screenOrientation="landscape"
+170-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:104:7-44
+171            android:theme="@style/Theme.Exponent.Light" >
+171-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:103:7-50
+172            <intent-filter>
+172-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:105:6-108:22
+173                <action android:name="android.intent.action.MAIN" />
+173-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:85:9-60
+173-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:85:17-58
+174
+175                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
+175-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:107:8-77
+175-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:107:18-74
+176            </intent-filter>
+177        </activity>
+178        <activity android:name="com.facebook.react.devsupport.DevSettingsActivity" />
+178-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:113:5-81
+178-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:113:15-79
+179        <!-- WHEN_PREPARING_SHELL_REMOVE_FROM_HERE -->
+180        <!-- ADD DEV SETTINGS HERE -->
+181        <!-- BEGIN_SDK_36 -->
+182        <activity android:name="abi36_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+182-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:117:5-91
+182-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:117:15-89
+183        <!-- END_SDK_36 -->
+184        <!-- BEGIN_SDK_35 -->
+185        <activity android:name="abi35_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+185-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:120:5-91
+185-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:120:15-89
+186        <!-- END_SDK_35 -->
+187        <!-- BEGIN_SDK_34 -->
+188        <activity android:name="abi34_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+188-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:123:5-91
+188-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:123:15-89
+189        <!-- END_SDK_34 -->
+190        <!-- BEGIN_SDK_33 -->
+191        <activity android:name="abi33_0_0.com.facebook.react.devsupport.DevSettingsActivity" />
+191-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:126:5-91
+191-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:126:15-89
+192        <!-- END_SDK_33 -->
+193        <!-- WHEN_PREPARING_SHELL_REMOVE_TO_HERE -->
+194
+195        <activity android:name="net.openid.appauth.RedirectUriReceiverActivity" >
+195-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:130:5-139:16
+195-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:131:9-70
+196            <intent-filter>
+196-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:133:7-138:23
+197                <action android:name="android.intent.action.VIEW" />
+197-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+197-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+198
+199                <category android:name="android.intent.category.DEFAULT" />
+199-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+199-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+200                <category android:name="android.intent.category.BROWSABLE" />
+200-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+200-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+201
+202                <data
+202-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+203                    android:path="oauthredirect"
+203-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:137:41-69
+204                    android:scheme="com.test" />
+204-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+205            </intent-filter>
+206        </activity>
+207
+208        <!-- START OF STRIPE SCHEMES -->
+209        <activity
+209-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:142:5-153:16
+210            android:name="expo.modules.payments.stripe.RedirectUriReceiver"
+210-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:145:9-72
+211            android:exported="true"
+211-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:143:9-32
+212            android:launchMode="singleTask"
+212-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:144:9-40
+213            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+213-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:146:9-79
+214            <intent-filter>
+214-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:147:9-152:25
+215                <action android:name="android.intent.action.VIEW" />
+215-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+215-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+216
+217                <category android:name="android.intent.category.DEFAULT" />
+217-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+217-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+218                <category android:name="android.intent.category.BROWSABLE" />
+218-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+218-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+219
+220                <data android:scheme="expo.modules.payments.stripe.dd286171-1b2a-49a9-afba-23d0d44d11a8" />
+220-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+220-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+221            </intent-filter>
+222        </activity>
+223        <!-- Versioned Activity for Stripe -->
+224        <!-- BEGIN_SDK_36 -->
+225        <activity
+225-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:156:5-167:16
+226            android:name="abi36_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+226-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:159:7-80
+227            android:exported="true"
+227-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:157:7-30
+228            android:launchMode="singleTask"
+228-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:158:7-38
+229            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+229-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:160:7-77
+230            <intent-filter>
+230-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:161:7-166:23
+231                <action android:name="android.intent.action.VIEW" />
+231-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+231-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+232
+233                <category android:name="android.intent.category.DEFAULT" />
+233-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+233-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+234                <category android:name="android.intent.category.BROWSABLE" />
+234-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+234-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+235
+236                <data android:scheme="abi36_0_0.expo.modules.payments.stripe" />
+236-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+236-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+237            </intent-filter>
+238        </activity>
+239        <!-- END_SDK_36 -->
+240        <!-- BEGIN_SDK_35 -->
+241        <activity
+241-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:170:3-181:14
+242            android:name="abi35_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+242-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:173:4-77
+243            android:exported="true"
+243-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:171:4-27
+244            android:launchMode="singleTask"
+244-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:172:4-35
+245            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+245-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:174:4-74
+246            <intent-filter>
+246-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:175:4-180:20
+247                <action android:name="android.intent.action.VIEW" />
+247-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+247-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+248
+249                <category android:name="android.intent.category.DEFAULT" />
+249-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+249-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+250                <category android:name="android.intent.category.BROWSABLE" />
+250-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+250-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+251
+252                <data android:scheme="abi35_0_0.expo.modules.payments.stripe" />
+252-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+252-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+253            </intent-filter>
+254        </activity>
+255        <!-- END_SDK_35 -->
+256        <!-- BEGIN_SDK_34 -->
+257        <activity
+257-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:184:5-195:16
+258            android:name="abi34_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+258-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:187:7-80
+259            android:exported="true"
+259-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:185:7-30
+260            android:launchMode="singleTask"
+260-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:186:7-38
+261            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+261-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:188:7-77
+262            <intent-filter>
+262-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:189:7-194:23
+263                <action android:name="android.intent.action.VIEW" />
+263-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+263-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+264
+265                <category android:name="android.intent.category.DEFAULT" />
+265-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+265-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+266                <category android:name="android.intent.category.BROWSABLE" />
+266-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+266-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+267
+268                <data android:scheme="abi34_0_0.expo.modules.payments.stripe" />
+268-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+268-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+269            </intent-filter>
+270        </activity>
+271        <!-- END_SDK_34 -->
+272        <!-- BEGIN_SDK_33 -->
+273        <activity
+273-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:198:5-209:16
+274            android:name="abi33_0_0.expo.modules.payments.stripe.RedirectUriReceiver"
+274-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:201:7-80
+275            android:exported="true"
+275-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:199:7-30
+276            android:launchMode="singleTask"
+276-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:200:7-38
+277            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" >
+277-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:202:7-77
+278            <intent-filter>
+278-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:203:7-208:23
+279                <action android:name="android.intent.action.VIEW" />
+279-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:9-60
+279-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:79:17-58
+280
+281                <category android:name="android.intent.category.DEFAULT" />
+281-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:9-67
+281-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:81:19-65
+282                <category android:name="android.intent.category.BROWSABLE" />
+282-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:9-69
+282-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:82:19-67
+283
+284                <data android:scheme="abi33_0_0.expo.modules.payments.stripe" />
+284-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:9-69
+284-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:77:15-67
+285            </intent-filter>
+286        </activity>
+287        <!-- END_SDK_33 -->
+288        <!-- END OF STRIPE SCHEMES -->
+289
+290        <activity
+290-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:213:5-217:16
+291            android:name="host.exp.exponent.experience.ErrorActivity"
+291-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:214:7-47
+292            android:screenOrientation="portrait"
+292-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:216:7-43
+293            android:theme="@style/Theme.Exponent.Dark" >
+293-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:215:7-49
+294        </activity>
+295        <activity
+295-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:219:5-223:16
+296            android:name="host.exp.exponent.experience.InfoActivity"
+296-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:220:7-46
+297            android:screenOrientation="portrait"
+297-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:221:7-43
+298            android:theme="@style/Theme.Exponent.Light" >
+298-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:222:7-50
+299        </activity>
+300        <activity
+300-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:225:5-230:39
+301            android:name="com.facebook.FacebookActivity"
+301-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:226:7-51
+302            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+302-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:227:7-90
+303            android:label="@string/app_name"
+303-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:228:7-39
+304            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+304-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:229:7-66
+305        <activity
+305-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:232:5-236:69
+306            android:name="com.facebook.ads.InterstitialAdActivity"
+306-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:233:7-61
+307            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+307-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:234:7-90
+308            android:label="@string/app_name"
+308-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:235:7-39
+309            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+309-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:236:7-66
+310
+311        <service
+311-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:238:5-240:34
+312            android:name="host.exp.exponent.ExponentIntentService"
+312-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:239:7-44
+313            android:exported="false" />
+313-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:240:7-31
+314
+315        <!-- Analytics -->
+316        <receiver
+316-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:243:5-249:16
+317            android:name="host.exp.exponent.referrer.InstallReferrerReceiver"
+317-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:244:7-72
+318            android:exported="true" >
+318-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:245:7-30
+319            <intent-filter>
+319-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:246:7-248:23
+320                <action android:name="com.android.vending.INSTALL_REFERRER" />
+320-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:9-71
+320-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:17-68
+321            </intent-filter>
+322        </receiver>
+323
+324        <!--
+325    This crashes: https://code.google.com/p/analytics-issues/issues/detail?id=667
+326    TODO: turn it back on when it's fixed
+327    <service
+328      android:name="com.google.android.gms.analytics.CampaignTrackingService"
+329      android:enabled="true"
+330      android:exported="false" />
+331        -->
+332
+333        <receiver
+333-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:259:5-264:16
+334            android:name="com.google.android.gms.analytics.AnalyticsReceiver"
+334-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:259:15-80
+335            android:enabled="true"
+335-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:260:15-37
+336            android:exported="false" >
+336-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:33:13-37
+337            <intent-filter>
+337-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:261:7-263:23
+338                <action android:name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+338-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:262:9-86
+338-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:262:17-83
+339            </intent-filter>
+340        </receiver>
+341
+342        <service
+342-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:266:5-268:40
+343            android:name="com.google.android.gms.analytics.AnalyticsService"
+343-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:266:14-78
+344            android:enabled="true"
+344-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:267:14-36
+345            android:exported="false" />
+345-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:268:14-38
+346
+347        <!-- GCM -->
+348        <receiver
+348-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:271:5-281:16
+349            android:name="com.google.android.gms.gcm.GcmReceiver"
+349-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:272:7-60
+350            android:exported="true"
+350-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:273:7-30
+351            android:permission="com.google.android.c2dm.permission.SEND" >
+351-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:274:7-67
+352            <intent-filter>
+352-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:275:7-280:23
+353                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+353-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:9-72
+353-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:17-70
+354                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+354-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:277:9-77
+354-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:277:17-75
+355
+356                <category android:name="com.test" />
+356-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:279:9-44
+356-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:279:19-42
+357            </intent-filter>
+358        </receiver>
+359
+360        <service
+360-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:283:5-289:15
+361            android:name="host.exp.exponent.gcm.ExponentGcmListenerService"
+361-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:284:7-53
+362            android:exported="false" >
+362-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:285:7-31
+363            <intent-filter>
+363-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:286:7-288:23
+364                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+364-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:9-72
+364-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:17-70
+365            </intent-filter>
+366        </service>
+367        <service
+367-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:290:5-296:15
+368            android:name="host.exp.exponent.gcm.ExponentInstanceIDListenerService"
+368-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:291:7-60
+369            android:exported="false" >
+369-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:292:7-31
+370            <intent-filter>
+370-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:293:7-295:23
+371                <action android:name="com.google.android.gms.iid.InstanceID" />
+371-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:294:9-71
+371-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:294:17-69
+372            </intent-filter>
+373        </service>
+374        <service
+374-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:297:5-300:15
+375            android:name="host.exp.exponent.gcm.GcmRegistrationIntentService"
+375-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:298:7-55
+376            android:exported="false" >
+376-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:299:7-31
+377        </service>
+378
+379        <!-- FCM -->
+380        <service android:name="host.exp.exponent.fcm.ExpoFcmMessagingService" >
+380-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:303:5-308:15
+380-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:304:7-50
+381            <intent-filter>
+381-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:305:7-307:23
+382                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+382-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:306:9-69
+382-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:306:17-67
+383            </intent-filter>
+384        </service>
+385
+386        <meta-data
+386-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:309:5-311:62
+387            android:name="com.google.firebase.messaging.default_notification_icon"
+387-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:310:7-77
+388            android:resource="@drawable/shell_notification_icon" />
+388-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:311:7-59
+389        <meta-data
+389-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:312:5-314:47
+390            android:name="com.google.firebase.messaging.default_notification_color"
+390-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:313:7-78
+391            android:resource="@color/colorAccent" />
+391-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:314:7-44
+392
+393        <service
+393-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:315:5-318:15
+394            android:name="host.exp.exponent.fcm.FcmRegistrationIntentService"
+394-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:316:7-55
+395            android:exported="false" >
+395-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:317:7-31
+396        </service>
+397
+398        <!-- ImagePicker native module -->
+399        <activity
+399-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:321:5-324:16
+400            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+400-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:322:7-70
+401            android:theme="@style/Base.Theme.AppCompat" >
+401-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:323:7-50
+402        </activity>
+403
+404        <!-- ADD FABRIC CONFIG HERE -->
+405
+406
+407        <!-- ADD GOOGLE MAPS CONFIG HERE -->
+408
+409
+410        <!-- ADD GOOGLE MOBILE ADS CONFIG HERE -->
+411        <!-- BEGIN GOOGLE MOBILE ADS CONFIG -->
+412        <meta-data
+412-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:333:5-335:63
+413            android:name="com.google.android.gms.ads.APPLICATION_ID"
+413-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:334:7-63
+414            android:value="ca-app-pub-3940256099942544~3347511713" />
+414-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:335:7-61
+415        <meta-data
+415-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:336:5-107
+416            android:name="com.google.android.gms.ads.DELAY_APP_MEASUREMENT_INIT"
+416-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:336:16-84
+417            android:value="true" />
+417-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:336:85-105
+418        <!-- END GOOGLE MOBILE ADS CONFIG -->
+419
+420
+421        <!-- ADD BRANCH CONFIG HERE -->
+422
+423
+424        <!-- ADD FACEBOOK APP ID CONFIG HERE -->
+425        <!-- ADD FACEBOOK APP DISPLAY NAME CONFIG HERE -->
+426        <!-- Tags below need to be in one line with no whitespace after android:value -->
+427        <!-- in order for XDL to be able to replace values in them -->
+428        <meta-data
+428-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:345:5-95
+429            android:name="com.facebook.sdk.AutoLogAppEventsEnabled"
+429-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:345:16-71
+430            android:value="false" />
+430-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:345:72-93
+431        <meta-data
+431-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:346:5-87
+432            android:name="com.facebook.sdk.AutoInitEnabled"
+432-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:346:16-63
+433            android:value="false" />
+433-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:346:64-85
+434        <meta-data
+434-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:347:5-101
+435            android:name="com.facebook.sdk.AdvertiserIDCollectionEnabled"
+435-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:347:16-77
+436            android:value="false" />
+436-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:347:78-99
+437        <meta-data
+437-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:349:5-109
+438            android:name="standaloneStripeScheme"
+438-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:349:16-53
+439            android:value="dd286171-1b2a-49a9-afba-23d0d44d11a8" />
+439-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:349:54-106
+440        <!-- WHEN_VERSIONING_REMOVE_FROM_HERE -->
+441        <!-- Scheduled notifications -->
+442        <receiver
+442-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:79:9-81:40
+443            android:name="host.exp.exponent.notifications.ScheduledNotificationReceiver"
+443-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:80:13-89
+444            android:exported="false" />
+444-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:81:13-37
+445        <receiver
+445-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:82:9-92:20
+446            android:name="host.exp.exponent.notifications.receivers.SchedulingTriggerReceiver"
+446-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:83:13-95
+447            android:exported="true" >
+447-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:84:13-36
+448            <intent-filter>
+448-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:85:13-91:29
+449                <action android:name="android.intent.action.REBOOT" />
+449-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:86:17-71
+449-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:86:25-68
+450                <action android:name="android.intent.action.BOOT_COMPLETED" />
+450-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:87:17-79
+450-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:87:25-76
+451                <action android:name="android.intent.action.TIMEZONE_CHANGED" />
+451-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:88:17-81
+451-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:88:25-78
+452                <action android:name="android.intent.action.TIME_CHANGED" />
+452-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:89:17-77
+452-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:89:25-74
+453                <action android:name="android.intent.action.QUICKBOOT_POWERON" />
+453-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:90:17-82
+453-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:90:25-79
+454            </intent-filter>
+455        </receiver> <!-- WHEN_VERSIONING_REMOVE_TO_HERE -->
+456        <provider
+456-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:96:9-104:20
+457            android:name="androidx.core.content.FileProvider"
+457-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:97:13-62
+458            android:authorities="com.test.provider"
+458-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:98:13-60
+459            android:exported="false"
+459-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:99:13-37
+460            android:grantUriPermissions="true" >
+460-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:100:13-47
+461            <meta-data
+461-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+462                android:name="android.support.FILE_PROVIDER_PATHS"
+462-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:102:17-67
+463                android:resource="@xml/provider_paths" />
+463-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:103:17-55
+464        </provider>
+465        <provider
+465-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:105:9-113:20
+466            android:name="versioned.host.exp.exponent.modules.api.components.webview.RNCWebViewFileProvider"
+466-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:106:13-109
+467            android:authorities="com.test.fileprovider"
+467-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:107:13-64
+468            android:exported="false"
+468-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:108:13-37
+469            android:grantUriPermissions="true" >
+469-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:109:13-47
+470            <meta-data
+470-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+471                android:name="android.support.FILE_PROVIDER_PATHS"
+471-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:102:17-67
+472                android:resource="@xml/provider_paths" />
+472-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:103:17-55
+473        </provider>
+474        <provider
+474-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:9-27:20
+475            android:name="expo.modules.filesystem.FileSystemFileProvider"
+475-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:19:13-74
+476            android:authorities="com.test.FileSystemFileProvider"
+476-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:20:13-74
+477            android:exported="false"
+477-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:21:13-37
+478            android:grantUriPermissions="true" >
+478-->[:expo-file-system] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-file-system/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:22:13-47
+479            <meta-data
+479-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:101:13-103:58
+480                android:name="android.support.FILE_PROVIDER_PATHS"
+480-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:102:17-67
+481                android:resource="@xml/file_system_provider_paths" />
+481-->[host.exp.exponent:expoview:36.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ae03431cefde13a65598df59a54d99e/expoview-36.0.0/AndroidManifest.xml:103:17-55
+482        </provider>
+483
+484        <service
+484-->[:expo-location] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:16:9-18:40
+485            android:name="expo.modules.location.services.LocationTaskService"
+485-->[:expo-location] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:17:13-78
+486            android:exported="false" />
+486-->[:expo-location] /Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/node_modules/expo-location/android/build/intermediates/library_manifest/debug/AndroidManifest.xml:18:13-37
+487
+488        <activity android:name="com.facebook.CustomTabMainActivity" />
+488-->[com.facebook.android:facebook-common:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/059bf25eced03c7a37c672a3a921ff48/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:9-71
+488-->[com.facebook.android:facebook-common:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/059bf25eced03c7a37c672a3a921ff48/jetified-facebook-common-5.0.1/AndroidManifest.xml:33:19-68
+489        <activity android:name="com.facebook.CustomTabActivity" />
+489-->[com.facebook.android:facebook-common:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/059bf25eced03c7a37c672a3a921ff48/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:9-67
+489-->[com.facebook.android:facebook-common:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/059bf25eced03c7a37c672a3a921ff48/jetified-facebook-common-5.0.1/AndroidManifest.xml:34:19-64
+490        <activity
+490-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:15:9-18:40
+491            android:name="com.facebook.ads.AudienceNetworkActivity"
+491-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:16:13-68
+492            android:configChanges="keyboardHidden|orientation|screenSize"
+492-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:17:13-74
+493            android:exported="false" />
+493-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:18:13-37
+494        <activity
+494-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:19:9-23:39
+495            android:name="com.facebook.ads.internal.ipc.RemoteANActivity"
+495-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:20:13-74
+496            android:configChanges="keyboardHidden|orientation|screenSize"
+496-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:21:13-74
+497            android:exported="false"
+497-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:22:13-37
+498            android:process=":adnw" />
+498-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:23:13-36
+499
+500        <service
+500-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:25:9-27:40
+501            android:name="com.facebook.ads.internal.ipc.AdsProcessPriorityService"
+501-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:26:13-83
+502            android:exported="false" />
+502-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:27:13-37
+503        <service
+503-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:28:9-31:39
+504            android:name="com.facebook.ads.internal.ipc.AdsMessengerService"
+504-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:29:13-77
+505            android:exported="false"
+505-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:30:13-37
+506            android:process=":adnw" />
+506-->[com.facebook.android:audience-network-sdk:5.1.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/3f77c0e8deeb7752a3cea4a64931e826/jetified-audience-network-sdk-5.1.1/AndroidManifest.xml:31:13-36
+507        <service
+507-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:40:9-44:72
+508            android:name="com.google.android.gms.analytics.AnalyticsJobService"
+508-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:41:13-80
+509            android:enabled="true"
+509-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:42:13-35
+510            android:exported="false"
+510-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:43:13-37
+511            android:permission="android.permission.BIND_JOB_SERVICE" /> <!-- Needs to be explicitly declared on P+ -->
+511-->[com.google.android.gms:play-services-analytics:16.0.8] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2cf579270d911d2312dce82a6d21f226/jetified-play-services-analytics-16.0.8/AndroidManifest.xml:44:13-69
+512        <uses-library
+512-->[com.google.android.gms:play-services-maps:16.1.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/623c53e6b82d2e551b74b2d1ba506b98/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+513            android:name="org.apache.http.legacy"
+513-->[com.google.android.gms:play-services-maps:16.1.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/623c53e6b82d2e551b74b2d1ba506b98/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
+514            android:required="false" />
+514-->[com.google.android.gms:play-services-maps:16.1.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/623c53e6b82d2e551b74b2d1ba506b98/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+515
+516        <activity
+516-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:23:9-27:75
+517            android:name="com.google.android.gms.auth.api.signin.internal.SignInHubActivity"
+517-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:24:13-93
+518            android:excludeFromRecents="true"
+518-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:25:13-46
+519            android:exported="false"
+519-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:26:13-37
+520            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+520-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:27:13-72
+521        <!--
+522            Service handling Google Sign-In user revocation. For apps that do not integrate with
+523            Google Sign-In, this service will never be started.
+524        -->
+525        <service
+525-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:33:9-36:110
+526            android:name="com.google.android.gms.auth.api.signin.RevocationBoundService"
+526-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:34:13-89
+527            android:exported="true"
+527-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:35:13-36
+528            android:permission="com.google.android.gms.auth.api.signin.permission.REVOCATION_NOTIFICATION" />
+528-->[com.google.android.gms:play-services-auth:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/9ebf86be33d71cf3b4ff0e21f742caf3/jetified-play-services-auth-16.0.1/AndroidManifest.xml:36:13-107
+529
+530        <activity
+530-->[net.openid:appauth:0.7.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2e612aba78af48225cd222a84a30c74f/jetified-appauth-0.7.1/AndroidManifest.xml:27:9-31:75
+531            android:name="net.openid.appauth.AuthorizationManagementActivity"
+531-->[net.openid:appauth:0.7.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2e612aba78af48225cd222a84a30c74f/jetified-appauth-0.7.1/AndroidManifest.xml:28:13-78
+532            android:exported="false"
+532-->[net.openid:appauth:0.7.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2e612aba78af48225cd222a84a30c74f/jetified-appauth-0.7.1/AndroidManifest.xml:29:13-37
+533            android:launchMode="singleTask"
+533-->[net.openid:appauth:0.7.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2e612aba78af48225cd222a84a30c74f/jetified-appauth-0.7.1/AndroidManifest.xml:30:13-44
+534            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+534-->[net.openid:appauth:0.7.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/2e612aba78af48225cd222a84a30c74f/jetified-appauth-0.7.1/AndroidManifest.xml:31:13-72
+535
+536        <service
+536-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:19:9-21:40
+537            android:name="io.nlopez.smartlocation.activity.providers.ActivityGooglePlayServicesProvider$ActivityRecognitionService"
+537-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:20:13-132
+538            android:exported="false" />
+538-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:21:13-37
+539        <service
+539-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:22:9-24:40
+540            android:name="io.nlopez.smartlocation.geofencing.providers.GeofencingGooglePlayServicesProvider$GeofencingService"
+540-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:23:13-127
+541            android:exported="false" />
+541-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:24:13-37
+542        <service
+542-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:25:9-27:40
+543            android:name="io.nlopez.smartlocation.geocoding.providers.AndroidGeocodingProvider$AndroidGeocodingService"
+543-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:26:13-120
+544            android:exported="false" />
+544-->[io.nlopez.smartlocation:library:3.2.11] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f13a133c2f60b28277e20147211b44b6/jetified-library-3.2.11/AndroidManifest.xml:27:13-37
+545        <!--
+546             FirebaseMessagingService performs security checks at runtime,
+547             but set to not exported to explicitly avoid allowing another app to call it.
+548        -->
+549        <service
+549-->[com.google.firebase:firebase-messaging:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/10c1228464efbaf14c9df0c3916fc60e/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:28:9-34:19
+550            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+550-->[com.google.firebase:firebase-messaging:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/10c1228464efbaf14c9df0c3916fc60e/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:29:13-82
+551            android:exported="false" >
+551-->[com.google.firebase:firebase-messaging:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/10c1228464efbaf14c9df0c3916fc60e/jetified-firebase-messaging-18.0.0/AndroidManifest.xml:30:13-37
+552            <intent-filter android:priority="-500" >
+552-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:305:7-307:23
+553                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+553-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:306:9-69
+553-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:306:17-67
+554            </intent-filter>
+555        </service>
+556        <service
+556-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:27:9-33:19
+557            android:name="com.google.firebase.components.ComponentDiscoveryService"
+557-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:28:13-84
+558            android:exported="false" >
+558-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:29:13-37
+559            <meta-data
+559-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:30:13-32:85
+560                android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar"
+560-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:31:17-139
+561                android:value="com.google.firebase.components.ComponentRegistrar" />
+561-->[com.google.android.gms:play-services-measurement-api:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/7521385ccea9cc635cf262e8c023de4e/jetified-play-services-measurement-api-16.5.0/AndroidManifest.xml:32:17-82
+562            <meta-data
+562-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:32:13-34:85
+563                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+563-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:33:17-96
+564                android:value="com.google.firebase.components.ComponentRegistrar" />
+564-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:34:17-82
+565        </service>
+566
+567        <receiver
+567-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:37:9-44:20
+568            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+568-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:38:13-78
+569            android:exported="true"
+569-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:39:13-36
+570            android:permission="com.google.android.c2dm.permission.SEND" >
+570-->[com.google.firebase:firebase-iid:18.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/64e9bdc1b0e193b72c14547657305805/jetified-firebase-iid-18.0.0/AndroidManifest.xml:40:13-73
+571            <intent-filter>
+571-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:286:7-288:23
+572                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+572-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:9-72
+572-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:276:17-70
+573            </intent-filter>
+574        </receiver>
+575
+576        <activity
+576-->[com.google.android.gms:play-services-base:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f1044d295b9a50840021f115582fc3c7/jetified-play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+577            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+577-->[com.google.android.gms:play-services-base:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f1044d295b9a50840021f115582fc3c7/jetified-play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+578            android:exported="false"
+578-->[com.google.android.gms:play-services-base:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f1044d295b9a50840021f115582fc3c7/jetified-play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+579            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+579-->[com.google.android.gms:play-services-base:16.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/f1044d295b9a50840021f115582fc3c7/jetified-play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+580
+581        <provider
+581-->[com.google.firebase:firebase-common:17.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/98f1538323b4fb2ecb6df9a79ef50ae8/jetified-firebase-common-17.0.0/AndroidManifest.xml:12:9-16:39
+582            android:name="com.google.firebase.provider.FirebaseInitProvider"
+582-->[com.google.firebase:firebase-common:17.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/98f1538323b4fb2ecb6df9a79ef50ae8/jetified-firebase-common-17.0.0/AndroidManifest.xml:13:13-77
+583            android:authorities="com.test.firebaseinitprovider"
+583-->[com.google.firebase:firebase-common:17.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/98f1538323b4fb2ecb6df9a79ef50ae8/jetified-firebase-common-17.0.0/AndroidManifest.xml:14:13-72
+584            android:exported="false"
+584-->[com.google.firebase:firebase-common:17.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/98f1538323b4fb2ecb6df9a79ef50ae8/jetified-firebase-common-17.0.0/AndroidManifest.xml:15:13-37
+585            android:initOrder="100" />
+585-->[com.google.firebase:firebase-common:17.0.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/98f1538323b4fb2ecb6df9a79ef50ae8/jetified-firebase-common-17.0.0/AndroidManifest.xml:16:13-36
+586
+587        <receiver
+587-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:29:9-33:20
+588            android:name="com.google.android.gms.measurement.AppMeasurementReceiver"
+588-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:30:13-85
+589            android:enabled="true"
+589-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:31:13-35
+590            android:exported="false" >
+590-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:32:13-37
+591        </receiver>
+592        <receiver
+592-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:34:9-42:20
+593            android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver"
+593-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:35:13-100
+594            android:enabled="true"
+594-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:36:13-35
+595            android:exported="true"
+595-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:37:13-36
+596            android:permission="android.permission.INSTALL_PACKAGES" >
+596-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:38:13-69
+597            <intent-filter>
+597-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:246:7-248:23
+598                <action android:name="com.android.vending.INSTALL_REFERRER" />
+598-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:9-71
+598-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:17-68
+599            </intent-filter>
+600        </receiver>
+601
+602        <service
+602-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:44:9-47:40
+603            android:name="com.google.android.gms.measurement.AppMeasurementService"
+603-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:45:13-84
+604            android:enabled="true"
+604-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:46:13-35
+605            android:exported="false" />
+605-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:47:13-37
+606        <service
+606-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:48:9-52:72
+607            android:name="com.google.android.gms.measurement.AppMeasurementJobService"
+607-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:49:13-87
+608            android:enabled="true"
+608-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:50:13-35
+609            android:exported="false"
+609-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:51:13-37
+610            android:permission="android.permission.BIND_JOB_SERVICE" />
+610-->[com.google.android.gms:play-services-measurement:16.5.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d68858ce73f5537da107cd5af6c8bde0/jetified-play-services-measurement-16.5.0/AndroidManifest.xml:52:13-69
+611
+612        <meta-data
+612-->[com.google.android.gms:play-services-basement:16.2.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/cc9b91dc4872e45d27ee5a41cc161e23/jetified-play-services-basement-16.2.0/AndroidManifest.xml:23:9-25:69
+613            android:name="com.google.android.gms.version"
+613-->[com.google.android.gms:play-services-basement:16.2.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/cc9b91dc4872e45d27ee5a41cc161e23/jetified-play-services-basement-16.2.0/AndroidManifest.xml:24:13-58
+614            android:value="@integer/google_play_services_version" />
+614-->[com.google.android.gms:play-services-basement:16.2.0] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/cc9b91dc4872e45d27ee5a41cc161e23/jetified-play-services-basement-16.2.0/AndroidManifest.xml:25:13-66
+615        <!--
+616         The initialization ContentProvider will call FacebookSdk.sdkInitialize automatically
+617         with the application context. This config is merged in with the host app's manifest,
+618         but there can only be one provider with the same authority activated at any given
+619         point; so if the end user has two or more different apps that use Facebook SDK, only the
+620         first one will be able to use the provider. To work around this problem, we use the
+621         following placeholder in the authority to identify each host application as if it was
+622         a completely different provider.
+623        -->
+624        <provider
+624-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:39:9-42:40
+625            android:name="com.facebook.internal.FacebookInitProvider"
+625-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:40:13-70
+626            android:authorities="com.test.FacebookInitProvider"
+626-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:41:13-72
+627            android:exported="false" />
+627-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:42:13-37
+628
+629        <receiver
+629-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:44:9-50:20
+630            android:name="com.facebook.CurrentAccessTokenExpirationBroadcastReceiver"
+630-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:45:13-86
+631            android:exported="false" >
+631-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:46:13-37
+632            <intent-filter>
+632-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:47:13-49:29
+633                <action android:name="com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED" />
+633-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:17-95
+633-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:48:25-92
+634            </intent-filter>
+635        </receiver>
+636        <receiver
+636-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:51:9-58:20
+637            android:name="com.facebook.CampaignTrackingReceiver"
+637-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:52:13-65
+638            android:exported="true"
+638-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:53:13-36
+639            android:permission="android.permission.INSTALL_PACKAGES" >
+639-->[com.facebook.android:facebook-core:5.0.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/40367661659513dedc3dcf3093972560/jetified-facebook-core-5.0.1/AndroidManifest.xml:54:13-69
+640            <intent-filter>
+640-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:246:7-248:23
+641                <action android:name="com.android.vending.INSTALL_REFERRER" />
+641-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:9-71
+641-->/Users/sebastienlorber/Desktop/bug-expokit-crashlytics/bug-expokit-crashlytics/android/app/src/main/AndroidManifest.xml:247:17-68
+642            </intent-filter>
+643        </receiver>
+644
+645        <provider
+645-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d7b2a0cffceee36a84dc870840ce4d6f/jetified-crashlytics-2.10.1/AndroidManifest.xml:19:9-23:38
+646            android:name="com.crashlytics.android.CrashlyticsInitProvider"
+646-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d7b2a0cffceee36a84dc870840ce4d6f/jetified-crashlytics-2.10.1/AndroidManifest.xml:20:13-75
+647            android:authorities="com.test.crashlyticsinitprovider"
+647-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d7b2a0cffceee36a84dc870840ce4d6f/jetified-crashlytics-2.10.1/AndroidManifest.xml:21:13-75
+648            android:exported="false"
+648-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d7b2a0cffceee36a84dc870840ce4d6f/jetified-crashlytics-2.10.1/AndroidManifest.xml:22:13-37
+649            android:initOrder="90" />
+649-->[com.crashlytics.sdk.android:crashlytics:2.10.1] /Users/sebastienlorber/.gradle/caches/transforms-2/files-2.1/d7b2a0cffceee36a84dc870840ce4d6f/jetified-crashlytics-2.10.1/AndroidManifest.xml:23:13-35
+650    </application>
+651
+652</manifest>
